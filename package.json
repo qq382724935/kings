@@ -1,0 +1,26 @@
+{
+  "name": "kings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ant-design-vue": "^1.4.0-beta.0",
+    "qiankun": "^1.1.12-0"
+  },
+  "devDependencies": {
+    "father-build": "^1.11.0"
+  },
+  "scripts": {
+    "serve": "npm run serve:main & npm run serve:king-web & npm run serve:king-admin",
+    "install:all": "npm run build && cd main && npm i && cd ../king-web && npm i && cd ../king-web && npm i",
+    "install:i": "cd main && npm i && cd ../king-web && npm i && cd ../king-web && npm i",
+    "serve:main": "cd main && npm run serve",
+    "serve:king-web": "cd king-web && npm run serve",
+    "serve:king-admin": "cd king-admin && npm run serve",
+    "build": "father-build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
